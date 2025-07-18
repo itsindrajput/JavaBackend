@@ -1,0 +1,69 @@
+@charset "UTF-8";
+body {
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+.form-card {
+  background-color: #fff;
+  color: #333;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.form-card:hover {
+  transform: translateY(-5px);
+}
+
+.btn-custom {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  border: none;
+}
+
+.btn-custom:hover {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+  
+ .output-box {
+ margin-top: 30px;
+ padding: 25px;
+ border-radius: 15px;
+ background: #f8f9fa;
+ color: #333;
+ box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+ transition: all 0.3s ease-in-out;
+ animation: fadeIn 1s ease-in-out;
+}
+
+.output-box:hover {
+  transform: translateY(-5px);
+}
+
+.output-box .tip {
+  font-weight: 500;
+  font-style: italic;
+  margin-top: 10px;
+  color: #007bff;
+  animation: typing 3s steps(30, end);
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #007bff;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
