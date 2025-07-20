@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="emp1" class="com.springCollection.Injection.Employee">
+		<property name="emp_Code" value="1001" />
+		
+		<property name="subject_Code">
+			<list>
+				<value>BTCSE101</value>
+				<value>BTCSE102</value>
+				<value>BTCSE103</value>
+			</list>
+		</property>
+		
+		<property name="class_Code">
+			<set>
+				<value>A401</value>
+				<value>B303</value>
+				<value>C407</value>
+			</set>
+		</property>
+		
+		<property name="sub_Duration">
+			<map>
+				<entry key="JFS" value="25Days" />
+				<entry key="DBMS" value="15Days" />
+				<entry key="NOS" value="20Days" />
+				<entry key="DSA" value="23Days" />
+			</map>
+		</property>
+		
+		<property name="emp_Prop">
+			<props>
+				<prop key="name">Rishabh</prop>
+				<prop key="age">26</prop>
+				<prop key="height">2.7</prop>
+			</props>
+		</property>
+	</bean>
+	
+</beans>
